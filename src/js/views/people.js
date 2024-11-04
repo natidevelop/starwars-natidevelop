@@ -22,6 +22,7 @@ const People = ()=>{
                id={item.uid}
                name={item.name}
                imageURL={`https://starwars-visualguide.com/assets/img/characters/${item.uid}.jpg`}
+            
                />
             ))}
         </div>
