@@ -13,17 +13,17 @@ export const Navbar = () => {
 				<span className="navbar-brand mb-0  text-light text-opacity-50 m-5 fs-1"><em>Star Wars</em></span>
 			</Link>
 			<div className="ml-auto">
-			<div className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle"
+			<div className="nav-item dropdow">
+                    <a className="nav-link dropdown-toggle text-light text-opacity-50"
                     href="#" role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false" >
-                    Favoritos {store.favorito.length}</a>
-                    <ul className="dropdown-menu" >
+                    aria-expanded="false" ><em>
+                    Favoritos {store.favorito.length}</em></a>
+                    <ul className=" dropdown-menu dropdown-menu-end" >
                         {store.favorito.map((item, id) => (
                         <li key={id}>
-                            <a className="dropdown-item" onClick={() => actions.favoritos(item)}>
-                            {item} <i class="fa fa-trash float-end"></i></a>
+                            <a className="dropdown-item " onClick={() => actions.favoritos(item)}>
+                            {item} <i className="fa fa-trash float-end"></i></a>
                         </li>))}
                     </ul>
                     </div>

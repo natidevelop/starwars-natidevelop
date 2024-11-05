@@ -11,7 +11,7 @@ const Planets = () => {
     }, [])
     return (
         <div>
-            <h1>Planets</h1>
+            <h1 className="text-dark text-opacity-50 shadow p-3 mb-5 rounded">Planets</h1>
             <div className="d-flex flex-row overflow-scroll ">
                 {store.planets.map((item) => (
                     <CardPlanet

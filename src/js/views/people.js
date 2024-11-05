@@ -14,7 +14,7 @@ const People = ()=>{
 
  return (
     <div>
-        <h1>People</h1>
+        <h1 className="text-dark text-opacity-50 shadow p-3 mb-5 rounded">People</h1>
         <div className="d-flex flex-row overflow-scroll">
             {store.people.map((item)=>(
                <Card
