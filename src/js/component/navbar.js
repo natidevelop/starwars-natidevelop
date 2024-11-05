@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import "../../styles/index.css"
 
 export const Navbar = () => {
 	const { actions, store } = useContext(Context)
@@ -8,13 +9,13 @@ export const Navbar = () => {
 	
 
 	return (
-		<nav className="navbar navbar-light bg-light mb-3 text-white-50 bg-dark ">
+		<nav className="navbar navbar-light bg-light text-white-50 bg-dark estrellas">
 			<Link to="/" style={{ textDecoration: 'none' }}>
-				<span className="navbar-brand mb-0  text-light text-opacity-50 m-5 fs-1"><em>Star Wars</em></span>
+				<span className="navbar-brand mb-0  text-danger text-opacity-75 m-5 fs-1 titulo"><em>Star Wars</em></span>
 			</Link>
 			<div className="ml-auto">
 			<div className="nav-item dropdow">
-                    <a className="nav-link dropdown-toggle text-light text-opacity-50"
+                    <a className="nav-link dropdown-toggle text-danger "
                     href="#" role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false" ><em>

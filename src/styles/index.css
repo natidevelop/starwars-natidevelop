@@ -1,3 +1,8 @@
-/* 
-    General Styles
-*/
+.estrellas{
+    background-image: url("https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-14_856985d9.jpeg?download=true");
+    background-size: cover;
+    height:150px
+}
+.titulo{
+    font-family: 'Star Wars', sans-serif;
+}

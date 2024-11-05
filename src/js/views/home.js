@@ -3,11 +3,12 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import People from "./people";
 import Planets from "./planet";
+import Vehicles from "./vehicles";
 
 export const Home = () => (
-	<div className="text-center mt-5 text-light text-opacity-50 bg-dark bg-opacity-25">
-		<h1><em></em></h1>
+	<div className="text-center text-light text-opacity-50 bg-dark bg-opacity-25">
 		<People />
 		<Planets />
+		<Vehicles/>
 	</div>
 );

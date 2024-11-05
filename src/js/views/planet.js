@@ -21,6 +21,7 @@ const Planets = () => {
                         imageURL={item.uid == 1 ?
                             "https://static.wikia.nocookie.net/esstarwars/images/b/b0/Tatooine_TPM.png"
                             : `https://starwars-visualguide.com/assets/img/planets/${item.uid}.jpg`}
+                        description="A planet within the Star Wars universe"
                     />
                 ))}
             </div>

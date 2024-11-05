@@ -14,7 +14,7 @@ const SinglePlanet = () => {
 
     return (
         <div className="container">
-            <div className="card mb-3  border border-dark" class="card-img-top rounded border border-dark m-3" style={{ width: "auto" }}>
+            <div className="card mb-3  border border-dark card-img-top rounded border border-dark m-3" style={{ width: "auto" }}>
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src={theid == 1 ?
@@ -27,7 +27,8 @@ const SinglePlanet = () => {
                             <p className="card-text shadow p-3 mb-5  rounded text-light text-opacity-50 bg-dark bg-opacity-50">climate : {store.planeta?.properties?.climate}</p>
                             <p className="card-text shadow p-3 mb-5  rounded text-light  text-opacity-50 bg-dark bg-opacity-50">Diameter : {store.planeta?.properties?.diameter}</p>
                             <p className="card-text shadow p-3 mb-5  rounded text-light text-opacity-50 bg-dark bg-opacity-50">Gravity : {store.planeta?.properties?.gravity}</p>
-                           
+                            <p className="card-text shadow p-3 mb-5  rounded text-light  text-opacity-50 bg-dark bg-opacity-50">Orbita : {store.planeta?.properties?.orbital_period}</p>
+                            <p className="card-text shadow p-3 mb-5  rounded text-light text-opacity-50 bg-dark bg-opacity-50">Rotation : {store.planeta?.properties?.rotation_period}</p>
                         </div>
                     </div>
                 </div>
