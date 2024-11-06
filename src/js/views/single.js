@@ -12,7 +12,7 @@ export const Single = props => {
 	}, [])
 	return (
 		<div className="container">
-			<div className="card mb-3 border border-darkcard-img-top rounded border border-dark m-3" style={{ width: "auto" }}>
+			<div className="card mb-3 border border-dark card-img-top rounded border border-dark m-3" style={{ width: "auto" }}>
 				<div className="row g-0">
 					<div className="col-md-4">
 						<img src={`https://starwars-visualguide.com/assets/img/characters/${theid}.jpg`}  className="img-fluid rounded-start w-100 h-100"  style={{ objectFit: "cover" }}alt={store.person?.properties?.name} />
@@ -35,4 +35,5 @@ export const Single = props => {
 
 Single.propTypes = {
 	match: PropTypes.object
-};
+}
+export default Single
