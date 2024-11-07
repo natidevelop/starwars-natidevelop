@@ -4,9 +4,10 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 
-const CardPlanet = ({ id, name, imageURL,description }) => {
+const CardPlanet = ({ id, name, imageURL, description }) => {
 
     const { actions, store } = useContext(Context)
+    const isFavorite = store.favorito.includes(name);
 
     return (
         <div>
@@ -17,7 +18,9 @@ const CardPlanet = ({ id, name, imageURL,description }) => {
                     <p className="card-text text-danger">{description}</p>
                     <Link to={"/singlePlanet/" + id} className="btn btn-dark text-light text-opacity-50">Learn More !</Link>
                     <button onClick={() => actions.favoritos(name)} type="button" className="btn btn-dark text-light text-opacity-50 m-1">
-                        <span className="text-success  text-light text-opacity-50 m-1"><i className="fa-duotone fa-solid fa-heart" /></span>
+                        <span className="m-1">
+                            <i className={`fa-solid fa-heart ${isFavorite ? "text-danger" : "text-secondary"}`}></i>
+                        </span>
                     </button>
                 </div>
             </div>
